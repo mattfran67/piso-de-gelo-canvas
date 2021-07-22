@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Piso de Gelo</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal" id="start">
+        <h4>Objetivo:</h4>
+        <p>Tente pressionar o interruptor no centro com uma das caixas</p>
+        <hr>
+        <h4>Controles:</h4>
+        <p>Teclas direcionais para mover as caixas</p>
+        <p>Botão esquerdo do mouse para selecionar a caixa</p>
+        <div class="buttons">
+          <button class="reset">Começar</button>
+        </div>
+      </div>
+      <div class="modal" style="display: none;">
+        <p class="congrats">Parabéns você conseguiu!!!🎉✨</p>
+        <hr>
+        <h4>Observação:</h4>
+        <p>Se prefirir um modo um pouco mais difícil clique no botão "Modo Difícil"</p>
+        <div class="buttons">
+          <button class="reset">Recomeçar</button>
+          <button id="hardMode">
+            Modo Difícil
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <canvas></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
